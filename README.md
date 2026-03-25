@@ -1,6 +1,7 @@
 
 ![Preview](/images/model/sketch/design01.png)
 ![Preview](/images/model/sketch/design02.png)
+![Preview](/images/model/sketch/design07.png)
 ![Preview](/images/model/sketch/design03.png)
 
 
