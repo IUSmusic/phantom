@@ -1,3 +1,10 @@
+![Preview](/images/model/sketch/modelpreview01.png)
+
+![Preview](solarsynthpost.png)
+
+![Preview](solarsynthpost.png)
+
+
 # Project Phantom 
 
 **Phantom** is a professional electric guitar concept built around a simple principle: the instrument must remain a **real guitar first**, while integrating advanced onboard digital processing, a robust hardware control surface, and a clear industrial identity.
