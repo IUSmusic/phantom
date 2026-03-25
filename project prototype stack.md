@@ -1,12 +1,7 @@
 # Project Phantom Prototype Stack
 
-## Purpose
+**A true electric guitar with integrated per-string DSP, expressed through a restrained physical control surface and a professional industrial design language.**
 
-This document defines the **final recommended prototype setup** for **Project Phantom**: a battery-powered, per-string DSP electric guitar with a minimal physical control surface, compact onboard electronics, and a professional stage-oriented design language.
-
-It is intended for GitHub documentation and reflects the **current recommended implementation direction**, not the broader design discussion.
-
----
 
 ## System Architecture
 
@@ -23,7 +18,6 @@ Project Phantom should be built as **three coordinated subsystems**:
 
 This separation is the correct foundation for reliability, shielding, serviceability, and future iteration.
 
----
 
 ## Prototype Setup
 
@@ -39,7 +33,6 @@ Examples: **Nu**, **Six Pack**, or equivalent Cycfi modular system
 #### Why this is the correct choice
 Project Phantom is not a MIDI-first instrument. It is built around **real per-string audio processing**, so the pickup system must begin with true hexaphonic capture.
 
----
 
 ### 2. Main Embedded Audio Core
 **For serious prototype:** Analog Devices **SHARC** platform  
@@ -65,7 +58,6 @@ Each string path should support:
 #### Why this is the correct choice
 SHARC is the strongest embedded path for the full Project Phantom feature set and gives the best chance of reaching product-grade performance without compromising responsiveness.
 
----
 
 ### 3. Audio Conversion
 **PCM3168A** or equivalent 6-in / 8-out audio codec
@@ -78,7 +70,6 @@ SHARC is the strongest embedded path for the full Project Phantom feature set an
 #### Why this is the correct choice
 Project Phantom naturally maps to a **6-input multichannel audio system**. A codec that already matches this topology reduces PCB complexity and shortens the path to a working prototype.
 
----
 
 ### 4. Output Architecture
 - **Stereo main output**
@@ -92,7 +83,6 @@ The output section should prioritize:
 - stage-safe operation
 - efficient battery-powered implementation
 
----
 
 ### 5. Control Surface Architecture
 ** dedicated **control-surface daughterboard**
@@ -111,8 +101,6 @@ The control surface should be mounted behind a **flush recessed metal or carbon 
 #### Why this is the correct choice
 This keeps the instrument tactile, stage-friendly, low-glare, and consistent with the intended product character.
 
----
-
 ### 6. Display Strategy
 Two small monochrome or single-color displays
 
@@ -129,7 +117,6 @@ Displays should be:
 - visually restrained
 - integrated into the hardware plate without dominating the body design
 
----
 
 ### 7. Power System
 **1S** rechargeable lithium system  
@@ -149,7 +136,6 @@ The power subsystem must be:
 - compact
 - properly filtered between analog and digital domains
 
----
 
 ## Mechanical Integration
 
@@ -168,9 +154,6 @@ The front of the instrument should remain divided into two distinct zones:
 - 2 protected displays
 - 3×4 assign button matrix
 
-This preserves the identity of the instrument as a **authentic wooden electric guitar**, while making the DSP system feel integrated and intentional.
-
----
 
 ### Rear Cavity Layout
 The rear service cavity should contain:
@@ -188,11 +171,8 @@ This layout supports:
 - improved shielding strategy
 - better separation between UI and audio electronics
 
----
 
 ## Shielding and Reliability Requirements
-
-Project Phantom must be designed as a professional instrument, not a novelty device.
 
 ### Required design priorities
 - isolated analog and digital sections
@@ -203,21 +183,16 @@ Project Phantom must be designed as a professional instrument, not a novelty dev
 - physically secure internal mounting
 - stage-safe mechanical robustness
 
-### Operational requirement
-The instrument should remain stable, quiet, and predictable in live conditions.
+## Development Path
 
----
-
-## Recommended Development Path
-
-### Phase 1 — Signal and DSP Validation
+### Phase 1 Signal and DSP Validation
 Build and validate:
 - hex pickup front end
 - multichannel conversion
 - per-string DSP chains
 - stereo output path
 
-### Phase 2 — Hardware UI Prototype
+### Phase 2 Hardware UI Prototype
 Add:
 - control plate
 - encoders
@@ -225,7 +200,7 @@ Add:
 - displays
 - preset and navigation logic
 
-### Phase 3 — Full Onboard Integration
+### Phase 3 Full Onboard Integration
 Integrate:
 - battery power
 - charging
@@ -233,13 +208,10 @@ Integrate:
 - rear cavity structure
 - production-oriented mechanical layout
 
-This sequence reduces risk and keeps the prototype effort focused on the most important problem first: **audio feel and responsiveness**.
 
----
+## Summary
 
-## Final Recommendation Summary
-
-### Final prototype stack
+### Prototype stack
 - **Hex pickup:** Cycfi active hexaphonic system
 - **DSP core:** ADSP-21569 SHARC
 - **Audio conversion:** PCM3168A-class 6-in / 8-out codec
@@ -249,22 +221,16 @@ This sequence reduces risk and keeps the prototype effort focused on the most im
 - **Power:** 1S rechargeable battery architecture with proper power-path management
 - **Mechanical structure:** front control plate + rear electronics cavity
 
----
-
 ## Product Character
 
 Project Phantom should feel like:
 
-- a **professional electric guitar**
+- a **heavy and authentic professional electric guitar**
 - a **precision onboard DSP instrument**
 - a **minimal hardware-controlled system**
 - a **stage-ready object with low visual noise**
 
 It should **not** feel like:
-- a tablet embedded in a guitar
-- a MIDI controller disguised as an instrument
-- a novelty smart-guitar concept
-
-The correct identity is:
-
-> **A true electric guitar with integrated per-string DSP, expressed through a restrained physical control surface and a professional industrial design language.**
+- a tablet embedded in a guitar or toy
+- a MIDI controller disguised as an instrument (it is not MIDI controller)
+- a novelty smart-guitar concept (like the ones on Amazon)
