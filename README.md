@@ -1,8 +1,8 @@
 ![Preview](/images/model/sketch/modelpreview01.png)
 
-![Preview](solarsynthpost.png)
+![Preview](/images/model/sketch/modelpreview02.png)
 
-![Preview](solarsynthpost.png)
+![Preview](/images/model/sketch/modelpreview03.png)
 
 
 # Project Phantom 
