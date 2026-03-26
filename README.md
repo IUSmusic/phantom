@@ -179,7 +179,7 @@ This separates **playing controls** from **system controls**.
 
 ## Signal Architecture
 
-NX Guitar is based on a **per-string audio architecture**.
+Phantom is based on a **per-string audio architecture**.
 
 ### High-level flow
 
@@ -235,7 +235,7 @@ The onboard processing system is intended to support a broad but instrument-focu
 ### Utility functions
 
 - tuner
-n- metronome
+- metronome
 - preset management
 - performance scenes
 - routing control
@@ -247,7 +247,7 @@ The design goal is not “infinite features,” but a focused professional toolk
 
 ## Mechanical Integration
 
-NX Guitar is mechanically organized into distinct zones so that the instrument remains serviceable and structurally coherent.
+Phantom is mechanically organized into distinct zones so that the instrument remains serviceable and structurally coherent.
 
 ### Front zone: playing surface
 The upper and central regions of the front body remain dedicated to the guitar itself:
@@ -314,7 +314,7 @@ The technical elements should feel integrated into the body, not attached after 
 
 ## Live Performance Character
 
-NX Guitar is meant to succeed in the exact places where many “smart instrument” concepts fail.
+Phantom is meant to succeed in the exact places where many “smart instrument” concepts fail.
 
 It is designed for:
 
